@@ -211,7 +211,7 @@ void ChristmasBrightnessFade() {
 
 void MixedLights2(int red1, int green1, int blue1, int red2, int green2, int blue2, int red3, int green3, int blue3, int red4, int green4, int blue4, int red5, int green5, int blue5) {
 
-  for (int place = 0; place <= NUM_LEDS; place = place+4) {
+  for (int place = 0; place <= NUM_LEDS; place = place+5) {
 
     leds[place] = CRGB(green1, red1, blue1);
     leds[place+1] = CRGB(green2, red2, blue2);
