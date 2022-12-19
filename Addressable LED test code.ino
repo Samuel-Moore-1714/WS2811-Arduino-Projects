@@ -154,7 +154,9 @@ void Sequence7() {
 
 void Sequence8() {
 
- ChristmasBrightnessFade();
+  for(int i = 0; i <= 5; i++) {
+    ChristmasBrightnessFade();
+  }
 
 }
 
@@ -407,6 +409,3 @@ void SparkleColorChange(int pulse, int red, int green, int blue) {
   }
   
 }
-
-
-
