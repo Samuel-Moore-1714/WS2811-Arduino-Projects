@@ -1,7 +1,7 @@
 #include <FastLED.h>
 
 #define LED_PIN     7
-#define NUM_LEDS    400
+#define NUM_LEDS    430
 
 int lights[NUM_LEDS + 1];
 
@@ -41,6 +41,8 @@ void Sequence1() {
     ColorClimbUp(pulse, 0,0,255);
     delay(wait);
   };
+
+  ColorClimbUp(pulse, 255,0,0);
 }
 
 void Sequence2() {
@@ -59,16 +61,18 @@ void Sequence2() {
     SparkleColorChange(pulse, 0,0,255);
     delay(wait);
   };
+
+  SparkleColorChange(pulse, 255,0,0);
 }
 
 void Sequence3() {
   int pulse = 50;
   int barWidth = 40;
-  int numColors = 2;
-  int repeat = (NUM_LEDS + 1) * 2;
+  int numColors = 3;
+  int repeat = (NUM_LEDS + 1);
 
   CRGB colors[] = {
-    CRGB(255,0,0),
+    CRGB(0,255,0),
     CRGB(255,255,255),
     CRGB(0,0,255)
   };
